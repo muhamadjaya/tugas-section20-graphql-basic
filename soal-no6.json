@@ -1,0 +1,10 @@
+query SoalNo6 {
+    anggota(where: {keterangan: {status: {_eq: true}}}) {
+      id
+      nama
+      keterangan(where: {status: {_eq: true}}) {
+        status
+      }
+    }
+  }
+  
